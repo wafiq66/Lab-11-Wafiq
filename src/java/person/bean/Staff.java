@@ -12,45 +12,40 @@ import java.io.Serializable;
  * @author user
  */
 public class Staff {
-    private int age;
-    private String firstname;
-    private String lastname;
-    
-    //default construstor
+   
+    private String name;
+    private int salary;
+    private String designation;
+    //default constructor
     public Staff(){
-        age = 0;
-        firstname = null;
-        lastname = null;
+        name = null;
+        salary = 0;
+        designation = null;
     }
     //normal constructor
-    public Staff(int a,String b, String c){
-        age = a;
-        firstname = b;
-        lastname = c;
+    public Staff(String a,int b, String c){
+        name = a;
+        salary = b;
+        designation = c;
     }
     //retriever
-    public int getAge(){
-        return age;
+    public String getName(){
+        return name;
     }
-    public String getFirstname(){
-        return firstname;
+    public int getSalary(){
+        return salary;
     }
-    public String getLastname(){
-        return lastname;
-    }
-    
-    public String getFullname(){
-        return (firstname + " "+ lastname);
+    public String getDesignation(){
+        return designation;
     }
     //modifier
-    public void setAge(int a){
-        age =a;
+    public void setName(String a){
+        name =a;
     }
-    public void setFirstname(String a){
-        firstname =a;
+    public void setSalary(int a){
+        salary =a;
     }
-    public void setLastname(String a){
-        lastname =a;
+    public void setDesignation(String a){
+        designation =a;
     }
-    
 }
